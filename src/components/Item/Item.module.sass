@@ -1,0 +1,20 @@
+.Item
+	@apply mt-2 text-black flex gap-5 justify-between items-center
+	.name
+		@apply w-40
+	.input
+		@apply flex gap-2
+		button
+			@apply bg-[#333] text-white w-8 h-8 rounded-md transition-all hover:bg-black
+			&:disabled
+				@apply bg-gray-400
+		input
+			@apply w-12 border rounded-md text-center
+			&:focus-visible
+				outline: none
+			/* Chrome, Safari, Edge, Opera */
+			&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+				-webkit-appearance: none
+			/* Firefox */
+			&[type=number]
+				-moz-appearance: textfield
